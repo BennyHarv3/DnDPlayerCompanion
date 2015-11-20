@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="DnDPlayerCompanion.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DnDPlayerCompanion"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <Button Name="NewCharacterButton"
+                    Content="New Character" />
+            <Button Name="LoadCharacterButton"
+                    Content="Load Character" />
+            <Button Name="DiceRollerButton"
+                    Content="Dice Roller" />
+            <Button Name="SpellListButton"
+                    Content="Spell List" />
+            <Button Name="EquipListButton"
+                    Content="Equipment List" />
+            <Button Name="ClassListButton"
+                    Content="Class List" />
+            <Button Name="RaceListButton"
+                    Content="Race List" />
+        </StackPanel>
+    </Grid>
+</Page>

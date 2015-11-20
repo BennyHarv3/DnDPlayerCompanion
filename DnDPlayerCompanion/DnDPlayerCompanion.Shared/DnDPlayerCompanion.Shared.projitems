@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>fb0f3ff2-ee78-4a82-bc8c-1c3ef7b73829</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>DnDPlayerCompanion</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BaseClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BaseRace.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BaseSkill.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BaseCharacter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characters\ThreeFiveCharacter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\AbilityEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\AlignmentEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\LanguageEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\SizeEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Races\Next\NextRace.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Classes\" />
+    <Folder Include="$(MSBuildThisFileDirectory)SkillsByEdition\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Races\Next\BaseDwarf.resw" />
+  </ItemGroup>
+</Project>
